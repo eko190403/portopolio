@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eko Saputra - Laravel Backend Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    html { scroll-behavior: smooth; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+    .btn-click { transition: transform 0.1s ease; }
+    .btn-click:active { transform: scale(0.95); }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-b from-gray-900 to-gray-800 text-white py-20 px-6">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 fade-in">
+        <img src="gambar.jpeg" alt="Eko Saputra"
+             class="w-28 h-28 rounded-full border-2 border-blue-500 object-cover hover:scale-110 transition-transform duration-300 cursor-pointer">
+        <div>
+            <h1 class="text-5xl font-bold mb-4">Eko Saputra</h1>
+            <p class="text-2xl text-blue-400 mb-6">Laravel Backend Developer</p>
+            <p class="text-xl text-gray-300 leading-relaxed max-w-3xl">
+                I build reliable web applications including business dashboards, online ordering systems, and interactive chat solutions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects -->
+<section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900 fade-in">Featured Projects</h2>
+
+        <!-- Project 1: Business Web -->
+        <div class="border border-gray-200 rounded-lg p-8 hover-lift fade-in mb-12">
+            <h3 class="text-2xl font-semibold mb-4 text-gray-900">Business Web (Laravel)</h3>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+                Laravel-based business application for service management, admin dashboard, appointment scheduling, and near real-time chat.
+            </p>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Role-based access control</li>
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Appointment scheduling & approval</li>
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>AJAX polling chat system</li>
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Admin dashboard & reporting</li>
+            </ul>
+            <div class="flex flex-wrap gap-4">
+                <a href="LIVE_DEMO_BUSINESS" target="_blank"
+                   class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium btn-click">Live Demo</a>
+                <a href="https://github.com/eko190403/eko-business-web-app-laravel.git" target="_blank"
+                   class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors font-medium btn-click">Source Code</a>
+            </div>
+        </div>
+
+        <!-- Project 2: Web Cafe -->
+        <div class="border border-gray-200 rounded-lg p-8 hover-lift fade-in mb-12">
+            <h3 class="text-2xl font-semibold mb-4 text-gray-900">Web Cafe – Online Ordering</h3>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+                Laravel-based web application for cafe online menu ordering. Customers can browse menu, place orders, and admins manage orders efficiently.
+            </p>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Online menu browsing</li>
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Order submission & management</li>
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Admin dashboard for orders</li>
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Responsive design for mobile & desktop</li>
+            </ul>
+            <div class="flex flex-wrap gap-4">
+                <a href="LIVE_DEMO_CAFE" target="_blank"
+                   class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium btn-click">Live Demo</a>
+                <a href="https://github.com/eko190403/web-cafe-laravel.git" target="_blank"
+                   class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors font-medium btn-click">Source Code</a>
+            </div>
+        </div>
+
+        <!-- Project 3: Web Chatbot -->
+        <div class="border border-gray-200 rounded-lg p-8 hover-lift fade-in mb-12">
+            <h3 class="text-2xl font-semibold mb-4 text-gray-900">Web Chatbot – Rule-based Fuzzy Matching</h3>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+                PHP native chatbot for academic information using rule-based fuzzy string matching and live chat with WebSocket.
+            </p>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Rule-based fuzzy string matching</li>
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Live chat with WebSocket</li>
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Academic FAQ automation</li>
+                <li class="flex items-start"><span class="text-blue-600 mr-2">▪</span>Responsive web interface</li>
+            </ul>
+            <div class="flex flex-wrap gap-4">
+                <a href="LIVE_DEMO_CHATBOT" target="_blank"
+                   class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium btn-click">Live Demo</a>
+                <a href="https://github.com/eko190403/chatbot-fuzzy-php.git" target="_blank"
+                   class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors font-medium btn-click">Source Code</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Tech Stack -->
+<section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900 fade-in">Tech Stack</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 fade-in">
+            <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all cursor-pointer">Laravel</div>
+            <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all cursor-pointer">PHP</div>
+            <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all cursor-pointer">MySQL</div>
+            <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all cursor-pointer">AJAX</div>
+            <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all cursor-pointer">REST API</div>
+            <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-200 hover:bg-blue-50 hover:border-blue-300 transition-all cursor-pointer md:col-span-3 lg:col-span-5">
+                WebSocket & IoT Integration
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 px-6 bg-gradient-to-b from-gray-800 to-gray-900 text-white">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+        <h2 class="text-3xl font-bold mb-4">Available for Freelance Work</h2>
+        <p class="text-xl text-gray-300 mb-8">
+            I help businesses build stable backend systems, online ordering, and interactive web applications.
+        </p>
+        <a href="https://www.upwork.com/freelancers/~YOUR_UPWORK_ID" target="_blank"
+           class="inline-block bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 transition-colors font-semibold text-lg btn-click">
+            Hire Me on Upwork
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 py-8 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+        <p>&copy; 2026 Eko Saputra. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+// Scroll Animation
+const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, observerOptions);
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => observer.observe(el));
+});
+</script>
+
+</body>
+</html>
