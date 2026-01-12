@@ -1,4 +1,4 @@
-# Portfolio - Eko Saputra
+# Portofolio - Eko Saputra
 
 Laravel Backend Developer Portfolio
 
